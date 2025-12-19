@@ -64,8 +64,8 @@ export default function AuthPage() {
                   <BookOpen className="h-5 w-5 text-accent" />
                 </div>
                 <div className="text-left">
-                  <h3 className="font-semibold mb-1">Academic Focus</h3>
-                  <p className="text-sm text-muted-foreground">Share resources, study groups, and opportunities</p>
+                  <h3 className="font-semibold mb-1">Student Lifestyle</h3>
+                  <p className="text-sm text-muted-foreground">Earn perks, borrow items, and share anonymously</p>
                 </div>
               </div>
             </div>

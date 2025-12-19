@@ -5,7 +5,7 @@ import {
   onAuthStateChanged,
   type User,
 } from "firebase/auth"
-import { doc, setDoc, getDoc } from "firebase/firestore"
+import { doc, setDoc, getDoc, updateDoc } from "firebase/firestore"
 import { auth, db } from "./config"
 
 // Email validation function - strictly restricts to .edu domains
@@ -19,6 +19,8 @@ export interface UserProfile {
   uid: string
   email: string
   rollNumber: string
+  currentPoints: number
+  lifetimePoints: number
   createdAt: string
   updatedAt: string
 }
@@ -30,6 +32,8 @@ export async function createUserProfile(uid: string, email: string, rollNumber: 
     uid,
     email,
     rollNumber,
+    currentPoints: 0,
+    lifetimePoints: 0,
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   }
@@ -102,5 +106,14 @@ export function onAuthChange(callback: (user: User | null) => void) {
   return onAuthStateChanged(auth, (user) => {
     console.log("[v0] Auth state changed", { user: user ? { uid: user.uid, email: user.email } : null })
     callback(user)
+  })
+}
+
+// Update user points
+export async function updateUserPoints(uid: string, points: number): Promise<void> {
+  const userRef = doc(db, "users", uid)
+  await updateDoc(userRef, {
+    attendancePoints: points,
+    updatedAt: new Date().toISOString(),
   })
 }

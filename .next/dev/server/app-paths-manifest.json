@@ -1,0 +1,11 @@
+{
+  "/auth/page": "app/auth/page.js",
+  "/chats/page": "app/chats/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/jugaadbank/page": "app/jugaadbank/page.js",
+  "/page": "app/page.js",
+  "/privilege-store/page": "app/privilege-store/page.js",
+  "/thirdspace/chat/[chatId]/page": "app/thirdspace/chat/[chatId]/page.js",
+  "/thirdspace/inbox/page": "app/thirdspace/inbox/page.js",
+  "/thirdspace/page": "app/thirdspace/page.js"
+}

@@ -1,0 +1,21 @@
+{
+  "node": {
+    "407076376327bc3d93dbafd4820581b0c8fce43ef4": {
+      "workers": {
+        "app/thirdspace/page": {
+          "moduleId": "[project]/.next-internal/server/app/thirdspace/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions/safety.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "checkContentSafety",
+          "filename": "app/actions/safety.ts"
+        }
+      },
+      "layer": {
+        "app/thirdspace/page": "action-browser"
+      },
+      "filename": "app/actions/safety.ts",
+      "exportedName": "checkContentSafety"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "EtE3xIZfOrm3rHXzi4xX8uzuWOrq0zu/ixUCszBIBqw="
+}

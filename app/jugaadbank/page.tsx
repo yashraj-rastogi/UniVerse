@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { useAuth } from "@/components/auth/auth-provider"
-import { getAvailableListings, getActiveRequests, type Listing, type Request } from "@/lib/firebase/jugaadbank"
+import { getAllListings, getActiveRequests, type Listing, type Request } from "@/lib/firebase/jugaadbank"
 import { getUserProfile } from "@/lib/firebase/auth"
 import { createOrGetChat } from "@/lib/firebase/chat"
 import { ListingForm } from "@/components/jugaadbank/listing-form"
@@ -48,8 +48,8 @@ export default function JugaadBankPage() {
   const loadListings = async () => {
     setLoading(true)
     try {
-      const availableListings = await getAvailableListings()
-      setListings(availableListings)
+      const allListings = await getAllListings()
+      setListings(allListings)
     } catch (error) {
       console.error("Error loading listings:", error)
       toast({
@@ -249,7 +249,13 @@ export default function JugaadBankPage() {
                 ) : (
                   <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {listings.map((listing) => (
-                      <ListingCard key={listing.id} listing={listing} onContact={handleContactLender} />
+                      <ListingCard 
+                        key={listing.id} 
+                        listing={listing} 
+                        currentUserId={user?.uid}
+                        onContact={handleContactLender} 
+                        onActionComplete={loadListings}
+                      />
                     ))}
                   </div>
                 )}

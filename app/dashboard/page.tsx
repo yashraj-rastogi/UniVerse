@@ -6,14 +6,17 @@ import { useAuth } from "@/components/auth/auth-provider"
 import { getUserProfile, signOut, type UserProfile } from "@/lib/firebase/auth"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Shield, LogOut, User, Mail, Award as IdCard, Recycle, MessageCircle } from "lucide-react"
+import { Shield, LogOut, User, Mail, Award as IdCard, Recycle, MessageCircle, ShoppingBag, Ghost } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import Link from "next/link"
+import { ClassMeter } from "@/components/dashboard/class-meter"
+import { useWallet } from "@/hooks/use-wallet"
 
 export default function DashboardPage() {
   const { user, loading: authLoading } = useAuth()
   const [profile, setProfile] = useState<UserProfile | null>(null)
   const [loading, setLoading] = useState(true)
+  const { currentPoints } = useWallet()
   const router = useRouter()
   const { toast } = useToast()
 
@@ -99,68 +102,93 @@ export default function DashboardPage() {
             <p className="text-lg text-muted-foreground">Your verified student community dashboard</p>
           </div>
 
-          {/* Profile Card */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Your Profile</CardTitle>
-              <CardDescription>Verified student information</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="flex items-start gap-4">
-                  <div className="bg-accent/10 p-2 rounded-lg">
-                    <Mail className="h-5 w-5 text-accent" />
+          <div className="grid gap-6 lg:grid-cols-3">
+            {/* Attendance Meter */}
+            <div className="lg:col-span-1">
+              <ClassMeter userId={user.uid} points={currentPoints} />
+            </div>
+
+            {/* Profile Card */}
+            <Card className="lg:col-span-2 h-full">
+              <CardHeader>
+                <CardTitle>Your Profile</CardTitle>
+                <CardDescription>Verified student information</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent/10 p-2 rounded-lg">
+                      <Mail className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-muted-foreground">Student Email</p>
+                      <p className="text-base font-semibold mt-1 break-all">{profile.email}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground">Student Email</p>
-                    <p className="text-base font-semibold mt-1">{profile.email}</p>
+
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent/10 p-2 rounded-lg">
+                      <IdCard className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-muted-foreground">Roll Number</p>
+                      <p className="text-base font-semibold mt-1">{profile.rollNumber}</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent/10 p-2 rounded-lg">
+                      <User className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-muted-foreground">User ID</p>
+                      <p className="text-base font-mono text-sm mt-1">{profile.uid.slice(0, 12)}...</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="bg-accent/10 p-2 rounded-lg">
+                      <Shield className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-muted-foreground">Status</p>
+                      <p className="text-base font-semibold mt-1 text-accent">Verified Student</p>
+                    </div>
                   </div>
                 </div>
+              </CardContent>
+            </Card>
+          </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-accent/10 p-2 rounded-lg">
-                    <IdCard className="h-5 w-5 text-accent" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground">Roll Number</p>
-                    <p className="text-base font-semibold mt-1">{profile.rollNumber}</p>
-                  </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <Card className="border-2 border-primary/20 hover:border-primary/50 transition-colors">
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <ShoppingBag className="h-5 w-5 text-primary" />
+                  <CardTitle className="text-lg">Privilege Store</CardTitle>
                 </div>
+                <CardDescription>Redeem points for perks</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground line-clamp-2">
+                  Get lunch queue skips, library extensions, and more using your attendance points.
+                </p>
+                <Button asChild className="w-full" variant="default">
+                  <Link href="/privilege-store">Visit Store</Link>
+                </Button>
+              </CardContent>
+            </Card>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-accent/10 p-2 rounded-lg">
-                    <User className="h-5 w-5 text-accent" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground">User ID</p>
-                    <p className="text-base font-mono text-sm mt-1">{profile.uid.slice(0, 12)}...</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-accent/10 p-2 rounded-lg">
-                    <Shield className="h-5 w-5 text-accent" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-muted-foreground">Status</p>
-                    <p className="text-base font-semibold mt-1 text-accent">Verified Student</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            <Card className="border-2 border-accent/50">
+            <Card className="border-2 border-accent/50 hover:border-accent transition-colors">
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <Recycle className="h-5 w-5 text-accent" />
                   <CardTitle className="text-lg">JugaadBank</CardTitle>
                 </div>
-                <CardDescription>Lend & borrow student items with points</CardDescription>
+                <CardDescription>Lend & borrow items</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground line-clamp-2">
                   Share calculators, lab coats, textbooks & more. Reduce waste, save money.
                 </p>
                 <Button asChild className="w-full">
@@ -169,16 +197,34 @@ export default function DashboardPage() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-primary/50">
+            <Card className="border-2 border-purple-500/20 hover:border-purple-500/50 transition-colors">
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <Ghost className="h-5 w-5 text-purple-500" />
+                  <CardTitle className="text-lg">ThirdSpace</CardTitle>
+                </div>
+                <CardDescription>Anonymous feed</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground line-clamp-2">
+                  Share thoughts, confessions, and ideas safely. Your identity is masked.
+                </p>
+                <Button asChild variant="outline" className="w-full border-purple-200 hover:bg-purple-50 hover:text-purple-600 dark:border-purple-800 dark:hover:bg-purple-950/50">
+                  <Link href="/thirdspace">Enter ThirdSpace</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/50 hover:border-primary transition-colors">
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <MessageCircle className="h-5 w-5 text-primary" />
                   <CardTitle className="text-lg">My Chats</CardTitle>
                 </div>
-                <CardDescription>View all your conversations</CardDescription>
+                <CardDescription>Your conversations</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-muted-foreground line-clamp-2">
                   Manage conversations with lenders and requesters from JugaadBank.
                 </p>
                 <Button asChild variant="secondary" className="w-full">

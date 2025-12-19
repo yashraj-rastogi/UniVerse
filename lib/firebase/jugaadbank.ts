@@ -1,5 +1,6 @@
-import { collection, addDoc, getDocs, query, orderBy, where } from "firebase/firestore"
+import { collection, addDoc, getDocs, query, orderBy, where, doc, updateDoc, getDoc } from "firebase/firestore"
 import { db } from "./config"
+import { addPoints, spendPoints } from "./wallet"
 
 // Listing interface
 export interface Listing {
@@ -13,6 +14,7 @@ export interface Listing {
   createdAt: string
   status: "available" | "borrowed" | "unavailable"
   category?: string
+  borrowerUid?: string
 }
 
 // Request interface for items students are looking for
@@ -65,6 +67,23 @@ export async function createListing(
 
   const docRef = await addDoc(collection(db, "listings"), listing)
   return docRef.id
+}
+
+// Get all listings (available and borrowed)
+export async function getAllListings(): Promise<Listing[]> {
+  const q = query(collection(db, "listings"), orderBy("createdAt", "desc"))
+
+  const querySnapshot = await getDocs(q)
+  const listings: Listing[] = []
+
+  querySnapshot.forEach((doc) => {
+    listings.push({
+      id: doc.id,
+      ...doc.data(),
+    } as Listing)
+  })
+
+  return listings
 }
 
 // Get all available listings

@@ -1,0 +1,1013 @@
+[00:00:02.022] Server  LOG      ✓ Ready in 1316ms
+[00:00:27.235] Server  LOG      ○ Compiling /thirdspace ...
+[00:01:21.993] Server  LOG     [v0] Initializing Firebase {}
+[00:01:22.011] Server  LOG     [v0] Firebase initialized {}
+[00:01:22.948] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:23.550] Browser LOG     [v0] Initializing Firebase {"hasApiKey":true,"hasAuthDomain":true,"hasProjectId":true}
+[00:01:23.550] Browser LOG     [v0] Firebase initialized {"appName":"[DEFAULT]"}
+[00:01:23.551] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:23.551] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/thirdspace","route":"/thirdspace"}
+[00:01:23.551] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766171080466}
+[00:01:24.551] Browser LOG     [v0] Auth state changed {"user":{"email":"yashraj1@srmcem.edu","uid":"vsp4ovNoNsckN8FPAxFYMABtCyM2"}}
+[00:02:05.574] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766171122630}
+[00:03:29.990] Browser LOG     [v0] Signing out
+[00:03:29.990] Browser LOG     [v0] Auth state changed {"user":null}
+[00:03:31.520] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth color: rgb(120, 120, 120) color: inherit {"dp":"/auth","o":"http://localhost:3000/auth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766171208576}
+[00:03:47.303] Browser LOG     [v0] Login form submitted {"email":"yashraj@srmcem.edu"}
+[00:03:47.303] Browser LOG     [v0] Starting sign in process {"email":"yashraj@srmcem.edu"}
+[00:03:48.255] Browser LOG     [v0] Sign in failed {"code":"auth/invalid-credential","error":"Firebase: Error (auth/invalid-credential)."}
+[00:03:48.255] Browser LOG     [v0] Login form error caught {"error":"Firebase: Error (auth/invalid-credential)."}
+[00:03:55.210] Browser LOG     [v0] Login form submitted {"email":"yashraj2@srmcem.edu"}
+[00:03:55.210] Browser LOG     [v0] Starting sign in process {"email":"yashraj2@srmcem.edu"}
+[00:03:56.092] Browser LOG     [v0] Auth state changed {"user":{"email":"yashraj2@srmcem.edu","uid":"CW4TrC5kWrRbuPOA5CAUbLZ6wYs2"}}
+[00:03:56.092] Browser LOG     [v0] Sign in successful {"uid":"CW4TrC5kWrRbuPOA5CAUbLZ6wYs2"}
+[00:03:56.092] Browser LOG     [v0] Login succeeded, showing toast and redirecting
+[00:03:56.092] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766171233144}
+[00:04:00.154] Browser LOG     Points added successfully
+[00:04:08.208] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766171245254}
+[00:04:42.246] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:42.448] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:42.482] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:42.490] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:42.503] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:42.510] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:42.516] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:42.523] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:42.527] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:42.536] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 27.286697605s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"27s"}]
+[00:04:52.374] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:52.387] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:52.389] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:52.391] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:52.398] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:52.401] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:52.403] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:52.404] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:52.407] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:04:52.413] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 17.066340476s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.0-flash","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"17s"}]
+[00:05:03.733] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:03.742] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:03.745] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:03.752] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:03.756] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:03.760] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:03.762] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:03.766] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:03.772] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:05:03.776] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 5.843375322s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.0-flash","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"5s"}]
+[00:08:17.023] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:17.031] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:17.036] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:17.040] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:17.062] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:17.083] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:17.092] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:17.104] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:17.106] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:17.109] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 52.422598927s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"52s"}]
+[00:09:40.828] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:40.836] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:40.840] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:40.843] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:40.844] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:40.847] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:40.849] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:40.850] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:40.852] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:40.856] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+Please retry in 28.753575136s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.0-flash","location":"global"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"28s"}]
+[00:09:56.802] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:56.813] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:56.815] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:56.817] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:56.818] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:56.820] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:56.822] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:56.824] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:56.826] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:09:56.828] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash
+Please retry in 12.69347234s. [{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"12s"}]
+[00:10:23.028] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766171620079}
+[00:11:14.557] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766171671600}
+[00:11:28.769] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:28.776] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:28.828] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:28.832] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:28.834] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:28.835] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:28.837] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:28.838] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:28.840] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:28.844] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[00:11:42.076] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:42.081] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:42.084] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:42.085] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:42.087] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:42.090] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:42.096] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:42.102] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:42.106] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:11:42.108] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[00:12:04.751] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:04.770] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:04.776] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:04.779] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:04.782] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:04.787] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:04.789] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:04.791] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:04.793] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:12:04.804] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [404 Not Found] models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[00:13:40.405] Server  LOG      ✓ Compiled in 285ms
+[00:14:32.672] Server  WARN    Gemini 1.5 Flash failed, falling back to Gemini Pro: "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-001:generateContent: [404 Not Found] models/gemini-1.5-flash-001 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+[00:14:32.877] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\_1ed80c3d._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:32.890] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:32.967] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_7fd562fd._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:32.971] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:32.974] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:32.986] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:32.988] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:32.997] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:33.000] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:14:33.003] Server  ERROR   Error checking content safety: Error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [404 Not Found] models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[00:15:40.789] Server  LOG     [v0] Initializing Firebase {}
+[00:15:40.816] Server  LOG     [v0] Firebase initialized {}
+[00:15:41.482] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:41.648] Browser LOG     [v0] Initializing Firebase {"hasApiKey":true,"hasAuthDomain":true,"hasProjectId":true}
+[00:15:41.648] Browser LOG     [v0] Firebase initialized {"appName":"[DEFAULT]"}
+[00:15:41.765] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:41.765] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/thirdspace","route":"/thirdspace"}
+[00:15:41.765] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766171938824}
+[00:15:42.687] Browser LOG     [v0] Auth state changed {"user":{"email":"yashraj2@srmcem.edu","uid":"CW4TrC5kWrRbuPOA5CAUbLZ6wYs2"}}
+[00:20:18.618] Server  LOG      ✓ Compiled in 112ms
+[00:20:54.980] Server  LOG      ✓ Compiled in 137ms
+[00:21:20.940] Server  LOG      ✓ Compiled in 92ms
+[00:21:56.817] Server  LOG      ✓ Compiled in 173ms
+[00:24:45.239] Server  LOG     [v0] Initializing Firebase {}
+[00:24:45.245] Server  LOG     [v0] Firebase initialized {}
+[00:24:45.952] Server  WARN     ⚠ Cross origin request detected from 192.168.43.232 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:24:45.986] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:46.198] Browser LOG     [v0] Initializing Firebase {"hasApiKey":true,"hasAuthDomain":true,"hasProjectId":true}
+[00:24:46.198] Browser LOG     [v0] Firebase initialized {"appName":"[DEFAULT]"}
+[00:24:46.935] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:24:46.935] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:24:46.935] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.43.232:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172517352}
+[00:24:46.935] Browser LOG     [v0] Auth state changed {"user":null}
+[00:24:47.148] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/auth color: rgb(120, 120, 120) color: inherit {"dp":"/auth","o":"http://192.168.43.232:3000/auth","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172517584}
+[00:25:39.400] Browser LOG     [v0] Starting sign up process {"email":"mahi@srmcem.edu","rollNumber":"CS2025001"}
+[00:25:39.400] Browser LOG     [v0] Creating user in Firebase Auth
+[00:25:41.755] Browser LOG     [v0] Auth state changed {"user":{"email":"mahi@srmcem.edu","uid":"Akxr9ZPw0CSH2P2uqtjYOprHrjq1"}}
+[00:25:41.755] Browser LOG     [v0] User created in Auth {"uid":"Akxr9ZPw0CSH2P2uqtjYOprHrjq1"}
+[00:25:41.755] Browser LOG     [v0] Creating user profile in Firestore
+[00:25:42.177] Browser LOG     [v0] User profile created successfully
+[00:25:42.522] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://192.168.43.232:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172572961}
+[00:25:47.081] Browser LOG     Points added successfully
+[00:25:52.090] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://192.168.43.232:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172582531}
+[00:26:10.041] Server  ERROR    ⨯ ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:10.184] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:10.350] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:11.770] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:11.867] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:11.960] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:12.065] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:13.217] Server  ERROR    ⨯ ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:13.236] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:13.240] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:13.463] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:13.463] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:13.463] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:13.846] Browser ERROR   uncaughtError: Error: ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:26:14.016] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:14.103] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:26:14.215] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:12.417] Server  ERROR    ⨯ ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:27:12.858] Browser ERROR   uncaughtError: Error: ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:27:13.029] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:13.029] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:13.553] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:13.553] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:15.123] Browser ERROR   uncaughtError: Error: ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:27:15.371] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:15.371] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:15.371] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:15.546] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:15.546] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:15.546] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:17.542] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:17.998] Browser ERROR   uncaughtError: Error: ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:27:18.228] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:18.228] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:18.548] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Module not found: Can't resolve '@/components/ui/scroll-area'
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+Import map: aliased to relative './components/ui/scroll-area' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[00:27:32.111] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Export ScrollArea doesn't exist in target module
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+The export ScrollArea was not found in module [project]/components/ui/scroll-area.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+[00:27:32.111] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Export ScrollArea doesn't exist in target module
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+The export ScrollArea was not found in module [project]/components/ui/scroll-area.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+[00:27:32.538] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Export ScrollArea doesn't exist in target module
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+The export ScrollArea was not found in module [project]/components/ui/scroll-area.tsx [app-client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+[00:27:32.538] Browser ERROR   ./components/thirdspace/secure-chat-window.tsx:9:1
+Export ScrollArea doesn't exist in target module
+   7 | import { Button } from "@/components/ui/button"
+   8 | import { Input } from "@/components/ui/input"
+>  9 | import { ScrollArea } from "@/components/ui/scroll-area"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  10 | import { ArrowLeft, Send, Lock } from "lucide-react"
+  11 |
+  12 | interface SecureChatWindowProps {
+
+The export ScrollArea was not found in module [project]/components/ui/scroll-area.tsx [app-ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./components/thirdspace/secure-chat-window.tsx
+    ./app/thirdspace/chat/[chatId]/page.tsx
+[00:27:33.015] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:27:33.119] Server  LOG      ✓ Compiled in 150ms
+[00:27:33.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:34.081] Browser LOG     [v0] Initializing Firebase {"hasApiKey":true,"hasAuthDomain":true,"hasProjectId":true}
+[00:27:34.081] Browser LOG     [v0] Firebase initialized {"appName":"[DEFAULT]"}
+[00:27:34.207] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:34.207] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/thirdspace","route":"/thirdspace"}
+[00:27:34.207] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://192.168.43.232:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172684647}
+[00:27:35.020] Browser LOG     [v0] Auth state changed {"user":{"email":"mahi@srmcem.edu","uid":"Akxr9ZPw0CSH2P2uqtjYOprHrjq1"}}
+[00:27:58.465] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:58.467] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\[root-of-the-server]__13969058._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:27:58.468] Server  WARN    Error: Route "/thirdspace/chat/[chatId]" used `params.chatId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:27:58.792] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace/chat/4KyoZb6u3ju9lG7wLbtY color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://192.168.43.232:3000/thirdspace/chat/4KyoZb6u3ju9lG7wLbtY","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172709216}
+[00:27:58.792] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'indexOf')
+[00:27:58.792] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'indexOf')
+[00:29:17.522] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\node_modules_next_dist_3b4d20e1._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:29:17.523] Server  ERROR   C:\Users\Yashraj Rastogi\OneDrive\Desktop\coderush\UniVerse\.next\dev\server\chunks\ssr\[root-of-the-server]__13969058._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:29:17.524] Server  WARN    Error: Route "/thirdspace/chat/[chatId]" used `params.chatId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:29:17.757] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172754802}
+[00:29:17.757] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'indexOf')
+[00:29:17.757] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'indexOf')
+[00:29:30.213] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://192.168.43.232:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172800635}
+[00:33:08.094] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172985116}
+[00:33:14.347] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766172991392}
+[00:33:31.015] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173008043}
+[00:34:06.445] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:06.445] Browser LOG     [v0] Initializing Firebase {"hasApiKey":true,"hasAuthDomain":true,"hasProjectId":true}
+[00:34:06.445] Browser LOG     [v0] Firebase initialized {"appName":"[DEFAULT]"}
+[00:34:06.904] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:34:06.904] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/thirdspace","route":"/thirdspace"}
+[00:34:06.904] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://192.168.43.232:3000/thirdspace","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173077236}
+[00:34:08.031] Browser LOG     [v0] Auth state changed {"user":{"email":"mahi@srmcem.edu","uid":"Akxr9ZPw0CSH2P2uqtjYOprHrjq1"}}
+[00:34:13.664] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace/chat/4KyoZb6u3ju9lG7wLbtY color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://192.168.43.232:3000/thirdspace/chat/4KyoZb6u3ju9lG7wLbtY","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173083949}
+[00:34:38.223] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173075267}
+[00:34:40.512] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173077543}
+[00:34:55.352] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173092356}
+[00:35:02.707] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/chats color: rgb(120, 120, 120) color: inherit {"dp":"/chats","o":"http://localhost:3000/chats","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173099756}
+[00:35:05.909] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173102967}
+[00:35:12.352] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173109394}
+[00:35:24.649] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173121694}
+[00:38:18.525] Server  LOG      ✓ Compiled in 85ms
+[00:38:41.065] Server  LOG      ✓ Compiled in 137ms
+[00:38:51.239] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173328276}
+[00:39:13.031] Server  LOG      ✓ Compiled in 161ms
+[00:40:05.365] Server  LOG      ✓ Compiled in 94ms
+[00:40:34.682] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/inbox color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/inbox","o":"http://localhost:3000/thirdspace/inbox","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173431737}
+[00:40:35.066] Browser ERROR   Error loading chats: {"code":"failed-precondition","name":"FirebaseError"}
+[00:40:35.066] Browser ERROR   Error loading chats: {"code":"failed-precondition","name":"FirebaseError"}
+[00:43:14.928] Server  LOG      ✓ Compiled in 103ms
+[00:43:38.495] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173615532}
+[00:43:49.238] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173626291}
+[00:43:59.988] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173637026}
+[00:44:03.479] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/inbox color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/inbox","o":"http://localhost:3000/thirdspace/inbox","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173640518}
+[00:44:15.293] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://localhost:3000/thirdspace/chat/2kWnS8TAUPT0A5G76zUU","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173652327}
+[00:44:17.732] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/inbox color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/inbox","o":"http://localhost:3000/thirdspace/inbox","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173654782}
+[00:44:33.299] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/chat/4KyoZb6u3ju9lG7wLbtY color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://localhost:3000/thirdspace/chat/4KyoZb6u3ju9lG7wLbtY","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173670311}
+[00:44:35.157] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace/inbox color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/inbox","o":"http://localhost:3000/thirdspace/inbox","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173672194}
+[00:44:37.162] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://localhost:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173674207}
+[00:44:44.095] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766173681147}
+[00:49:05.904] Server  LOG      ✓ Compiled in 182ms
+[00:49:49.307] Server  LOG      ✓ Compiled in 248ms
+[00:50:50.406] Browser WARN    [2025-12-19T19:40:30.715Z]  @firebase/firestore: Firestore (12.6.0): WebChannelConnection RPC 'Listen' stream 0x13a5a02d transport errored. Name: undefined Message: undefined
+[00:50:50.406] Browser WARN    [2025-12-19T19:40:30.766Z]  @firebase/firestore: Firestore (12.6.0): WebChannelConnection RPC 'Listen' stream 0x13a5a02f transport errored. Name: undefined Message: undefined
+[00:50:50.406] Browser WARN    [2025-12-19T19:40:32.713Z]  @firebase/firestore: Firestore (12.6.0): WebChannelConnection RPC 'Listen' stream 0x13a5a030 transport errored. Name: undefined Message: undefined
+[00:50:50.406] Browser WARN    [2025-12-19T19:40:34.715Z]  @firebase/firestore: Firestore (12.6.0): WebChannelConnection RPC 'Listen' stream 0x13a5a031 transport errored. Name: undefined Message: undefined
+[00:50:50.406] Browser WARN    [2025-12-19T19:40:37.714Z]  @firebase/firestore: Firestore (12.6.0): WebChannelConnection RPC 'Listen' stream 0x13a5a032 transport errored. Name: undefined Message: undefined
+[00:50:51.673] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://192.168.43.232:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174082024}
+[00:50:55.013] Server  LOG     [v0] Initializing Firebase {}
+[00:50:55.020] Server  LOG     [v0] Firebase initialized {}
+[00:50:55.964] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:56.108] Browser LOG     [v0] Initializing Firebase {"hasApiKey":true,"hasAuthDomain":true,"hasProjectId":true}
+[00:50:56.108] Browser LOG     [v0] Firebase initialized {"appName":"[DEFAULT]"}
+[00:50:56.222] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:50:56.222] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:50:56.222] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://192.168.43.232:3000/dashboard","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174086634}
+[00:50:57.509] Browser LOG     [v0] Auth state changed {"user":{"email":"mahi@srmcem.edu","uid":"Akxr9ZPw0CSH2P2uqtjYOprHrjq1"}}
+[00:51:06.347] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:06.544] Browser LOG     [v0] Initializing Firebase {"hasApiKey":true,"hasAuthDomain":true,"hasProjectId":true}
+[00:51:06.544] Browser LOG     [v0] Firebase initialized {"appName":"[DEFAULT]"}
+[00:51:06.725] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:51:06.725] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:51:06.725] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://192.168.43.232:3000/dashboard","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174097072}
+[00:51:07.342] Browser LOG     [v0] Auth state changed {"user":{"email":"mahi@srmcem.edu","uid":"Akxr9ZPw0CSH2P2uqtjYOprHrjq1"}}
+[00:51:25.784] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/privilege-store color: rgb(120, 120, 120) color: inherit {"dp":"/privilege-store","o":"http://192.168.43.232:3000/privilege-store","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174116194}
+[00:51:29.424] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://192.168.43.232:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174119834}
+[00:51:35.418] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/jugaadbank color: rgb(120, 120, 120) color: inherit {"dp":"/jugaadbank","o":"http://192.168.43.232:3000/jugaadbank","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174125819}
+[00:52:06.384] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://192.168.43.232:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174156778}
+[00:52:12.096] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://192.168.43.232:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174162507}
+[00:52:19.417] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace/inbox color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/inbox","o":"http://192.168.43.232:3000/thirdspace/inbox","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174169812}
+[00:52:21.786] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://192.168.43.232:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174172098}
+[00:52:24.284] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace/inbox color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/inbox","o":"http://192.168.43.232:3000/thirdspace/inbox","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174174694}
+[00:52:28.230] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace/chat/4KyoZb6u3ju9lG7wLbtY color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/chat/[chatId]","o":"http://192.168.43.232:3000/thirdspace/chat/4KyoZb6u3ju9lG7wLbtY","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174178625}
+[00:52:31.107] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace/inbox color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace/inbox","o":"http://192.168.43.232:3000/thirdspace/inbox","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174181281}
+[00:52:32.334] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.43.232:3000/thirdspace color: rgb(120, 120, 120) color: inherit {"dp":"/thirdspace","o":"http://192.168.43.232:3000/thirdspace","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174182549}
+[00:54:56.903] Server  LOG      ✓ Compiled in 166ms
+[00:55:39.445] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/privilege-store color: rgb(120, 120, 120) color: inherit {"dp":"/privilege-store","o":"http://localhost:3000/privilege-store","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174336494}
+[00:55:43.239] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174340288}
+[00:55:47.846] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/jugaadbank color: rgb(120, 120, 120) color: inherit {"dp":"/jugaadbank","o":"http://localhost:3000/jugaadbank","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174344889}
+[00:55:51.964] Browser LOG     Points spent successfully
+[00:56:04.752] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766174361803}
+[00:58:34.738] Server  LOG      ✓ Compiled in 133ms
