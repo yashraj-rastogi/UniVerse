@@ -1,30 +1,75 @@
-# Student authentication app
+# UniVerse
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+UniVerse is a modern web application built with Next.js 16, React 19, and Firebase. It features a unique "Ocean" theme, dark mode support, and a specialized "ThirdSpace" for anonymous interactions.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/yashrajs-projects-d1395c81/v0-student-authentication-app)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/stBHvdNmxVn)
+## Features
 
-## Overview
+-   **Modern UI**: Built with Tailwind CSS v4 and Shadcn UI components.
+-   **Theming**:
+    -   **Ocean Theme**: A custom color palette inspired by the ocean.
+    -   **Dark Mode**: Fully supported with a toggle switch.
+    -   **ThirdSpace**: A distinct, anonymous section with a "Midnight Violet" theme.
+-   **Authentication**: Secure user authentication using Firebase Auth.
+-   **Database**: Real-time data storage with Firebase Firestore.
+-   **AI Safety**: Content moderation for posts using Google Gemini AI (Gemini 1.5 Flash).
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Getting Started
 
-## Deployment
+### Prerequisites
 
-Your project is live at:
+-   Node.js (v18 or higher)
+-   npm or pnpm
 
-**[https://vercel.com/yashrajs-projects-d1395c81/v0-student-authentication-app](https://vercel.com/yashrajs-projects-d1395c81/v0-student-authentication-app)**
+### Installation
 
-## Build your app
+1.  Clone the repository:
+    ```bash
+    git clone <repository-url>
+    cd UniVerse
+    ```
 
-Continue building your app on:
+2.  Install dependencies:
+    ```bash
+    npm install
+    # or
+    pnpm install
+    ```
 
-**[https://v0.app/chat/stBHvdNmxVn](https://v0.app/chat/stBHvdNmxVn)**
+3.  Set up Environment Variables:
+    -   Copy `.env.example` to `.env.local`:
+        ```bash
+        cp .env.example .env.local
+        ```
+    -   Fill in your Firebase and Gemini API keys in `.env.local`.
 
-## How It Works
+### Running the Development Server
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+npm run dev
+# or
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Deployment on Vercel
+
+1.  Push your code to a Git repository (GitHub, GitLab, Bitbucket).
+2.  Import the project into Vercel.
+3.  Vercel will automatically detect Next.js.
+4.  **Important**: Add the Environment Variables (from your `.env.local`) to the Vercel project settings.
+5.  Deploy!
+
+## Important Notes
+
+-   **AI Safety**: The project uses Google Gemini AI for content safety checks. Ensure your `GEMINI_API_KEY` is valid.
+    -   *Note*: If you see "403 Forbidden" errors in logs, your API key might be compromised or invalid. Please generate a new one from Google AI Studio.
+-   **Build Configuration**: The project is configured to ignore TypeScript build errors (`ignoreBuildErrors: true`) to facilitate smoother deployment for prototypes.
+
+## Tech Stack
+
+-   **Framework**: Next.js 16 (App Router)
+-   **Language**: TypeScript
+-   **Styling**: Tailwind CSS v4
+-   **Backend**: Firebase (Auth, Firestore)
+-   **AI**: Google Generative AI SDK

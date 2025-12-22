@@ -5,6 +5,7 @@ import { RegisterForm } from "@/components/auth/register-form"
 import { LoginForm } from "@/components/auth/login-form"
 import { Button } from "@/components/ui/button"
 import { Shield, Users, BookOpen } from "lucide-react"
+import { ModeToggle } from "@/components/mode-toggle"
 
 export default function AuthPage() {
   const [mode, setMode] = useState<"login" | "register">("register")
@@ -12,13 +13,14 @@ export default function AuthPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-secondary/20 to-background flex flex-col">
       {/* Header */}
-      <header className="w-full px-4 py-6 md:px-8">
+      <header className="w-full px-4 py-6 md:px-8 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="bg-accent p-2 rounded-lg">
             <Shield className="h-6 w-6 text-accent-foreground" />
           </div>
           <span className="text-2xl font-bold">UniVerse</span>
         </div>
+        <ModeToggle />
       </header>
 
       {/* Main Content */}

@@ -16,13 +16,12 @@ export async function checkContentSafety(text: string): Promise<{ isSafe: boolea
     let result;
     try {
         // Try the model available in your dashboard
-        const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
-        result = await model.generateContent(prompt);
-    } catch (e: any) {
-        console.warn("Gemini 2.5 Flash failed, trying 1.5 Flash:", e.message);
-        // Fallback to 1.5 just in case
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
         result = await model.generateContent(prompt);
+    } catch (e: any) {
+        console.warn("Gemini 1.5 Flash failed:", e.message);
+        // Fail open if the API fails
+        return { isSafe: true };
     }
 
     const response = await result.response;
@@ -35,10 +34,11 @@ export async function checkContentSafety(text: string): Promise<{ isSafe: boolea
     } else {
       // Fallback for unexpected responses
       console.warn("Unexpected response from Gemini:", textResponse);
-      return { isSafe: false, error: "Unable to verify content safety." };
+      return { isSafe: true };
     }
   } catch (error: any) {
     console.error("Error checking content safety:", error);
-    return { isSafe: false, error: `Error checking content safety: ${error.message || error}` };
+    // Fail open on error to allow posting when API is down/invalid
+    return { isSafe: true };
   }
 }

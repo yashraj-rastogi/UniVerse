@@ -58,7 +58,7 @@ export default function ThirdSpacePage() {
   if (!user) return null
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-secondary/20 to-background pb-20">
+    <div className="min-h-screen pb-20">
       <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="max-w-2xl mx-auto flex items-center justify-between h-16 px-4">
           <div className="flex items-center">
@@ -68,8 +68,8 @@ export default function ThirdSpacePage() {
               </Link>
             </Button>
             <div className="flex items-center gap-2">
-              <div className="bg-purple-500/10 p-2 rounded-lg">
-                <Ghost className="h-5 w-5 text-purple-500" />
+              <div className="bg-primary/10 p-2 rounded-lg">
+                <Ghost className="h-5 w-5 text-primary" />
               </div>
               <h1 className="text-xl font-bold">ThirdSpace</h1>
             </div>

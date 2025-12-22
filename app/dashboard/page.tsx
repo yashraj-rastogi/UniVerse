@@ -11,6 +11,7 @@ import { useToast } from "@/hooks/use-toast"
 import Link from "next/link"
 import { ClassMeter } from "@/components/dashboard/class-meter"
 import { useWallet } from "@/hooks/use-wallet"
+import { ModeToggle } from "@/components/mode-toggle"
 
 export default function DashboardPage() {
   const { user, loading: authLoading } = useAuth()
@@ -86,10 +87,13 @@ export default function DashboardPage() {
             </div>
             <span className="text-2xl font-bold">UniVerse</span>
           </div>
-          <Button variant="outline" onClick={handleSignOut}>
-            <LogOut className="h-4 w-4 mr-2" />
-            Sign Out
-          </Button>
+          <div className="flex items-center gap-4">
+            <ModeToggle />
+            <Button variant="outline" onClick={handleSignOut}>
+              <LogOut className="h-4 w-4 mr-2" />
+              Sign Out
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -161,7 +165,25 @@ export default function DashboardPage() {
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <Card className="border-2 border-primary/20 hover:border-primary/50 transition-colors">
+            <Card className="border-2 border-accent/50 hover:border-accent transition-colors">
+              <CardHeader>
+                <div className="flex items-center gap-2">
+                  <Recycle className="h-5 w-5 text-accent" />
+                  <CardTitle className="text-lg">JugaadBank</CardTitle>
+                </div>
+                <CardDescription>Lend & borrow items</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-muted-foreground line-clamp-2">
+                  Share calculators, lab coats, textbooks & more. Reduce waste, save money.
+                </p>
+                <Button asChild className="w-full">
+                  <Link href="/jugaadbank">Open JugaadBank</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-accent/50 hover:border-accent transition-colors">
               <CardHeader>
                 <div className="flex items-center gap-2">
                   <ShoppingBag className="h-5 w-5 text-primary" />
@@ -182,17 +204,17 @@ export default function DashboardPage() {
             <Card className="border-2 border-accent/50 hover:border-accent transition-colors">
               <CardHeader>
                 <div className="flex items-center gap-2">
-                  <Recycle className="h-5 w-5 text-accent" />
-                  <CardTitle className="text-lg">JugaadBank</CardTitle>
+                  <MessageCircle className="h-5 w-5 text-primary" />
+                  <CardTitle className="text-lg">My Chats</CardTitle>
                 </div>
-                <CardDescription>Lend & borrow items</CardDescription>
+                <CardDescription>Your conversations</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-muted-foreground line-clamp-2">
-                  Share calculators, lab coats, textbooks & more. Reduce waste, save money.
+                  Manage conversations with lenders and requesters from JugaadBank.
                 </p>
-                <Button asChild className="w-full">
-                  <Link href="/jugaadbank">Open JugaadBank</Link>
+                <Button asChild variant="secondary" className="w-full">
+                  <Link href="/chats">View Chats</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -209,26 +231,8 @@ export default function DashboardPage() {
                 <p className="text-sm text-muted-foreground line-clamp-2">
                   Share thoughts, confessions, and ideas safely. Your identity is masked.
                 </p>
-                <Button asChild variant="outline" className="w-full border-purple-200 hover:bg-purple-50 hover:text-purple-600 dark:border-purple-800 dark:hover:bg-purple-950/50">
+                <Button asChild variant="outline" className="w-full border-purple-200 hover:bg-purple-100 hover:text-purple-600 dark:border-purple-800 dark:hover:bg-purple-950/50">
                   <Link href="/thirdspace">Enter ThirdSpace</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-primary/50 hover:border-primary transition-colors">
-              <CardHeader>
-                <div className="flex items-center gap-2">
-                  <MessageCircle className="h-5 w-5 text-primary" />
-                  <CardTitle className="text-lg">My Chats</CardTitle>
-                </div>
-                <CardDescription>Your conversations</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-sm text-muted-foreground line-clamp-2">
-                  Manage conversations with lenders and requesters from JugaadBank.
-                </p>
-                <Button asChild variant="secondary" className="w-full">
-                  <Link href="/chats">View Chats</Link>
                 </Button>
               </CardContent>
             </Card>
