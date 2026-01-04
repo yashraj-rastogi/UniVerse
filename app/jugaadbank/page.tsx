@@ -16,6 +16,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { useToast } from "@/hooks/use-toast"
 import { ArrowLeft, Recycle, Loader2, ShoppingBag, MessageCircle } from "lucide-react"
 import Link from "next/link"
+import { BottomNav } from "@/components/navigation/bottom-nav"
 
 import type { Chat } from "@/lib/firebase/chat"
 
@@ -384,6 +385,7 @@ export default function JugaadBankPage() {
       </main>
 
       {activeChat && <ChatWindow chat={activeChat} onClose={() => setActiveChat(null)} />}
+      <BottomNav />
     </div>
   )
 }

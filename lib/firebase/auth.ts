@@ -19,6 +19,7 @@ export interface UserProfile {
   uid: string
   email: string
   rollNumber: string
+  role: "student" | "teacher"
   currentPoints: number
   lifetimePoints: number
   createdAt: string
@@ -26,12 +27,13 @@ export interface UserProfile {
 }
 
 // Create user profile in Firestore
-export async function createUserProfile(uid: string, email: string, rollNumber: string): Promise<void> {
+export async function createUserProfile(uid: string, email: string, rollNumber: string, role: "student" | "teacher" = "student"): Promise<void> {
   const userRef = doc(db, "users", uid)
   const profile: UserProfile = {
     uid,
     email,
     rollNumber,
+    role,
     currentPoints: 0,
     lifetimePoints: 0,
     createdAt: new Date().toISOString(),
@@ -53,8 +55,8 @@ export async function getUserProfile(uid: string): Promise<UserProfile | null> {
 }
 
 // Sign up with email validation
-export async function signUp(email: string, password: string, rollNumber: string) {
-  console.log("[v0] Starting sign up process", { email, rollNumber })
+export async function signUp(email: string, password: string, rollNumber: string, role: "student" | "teacher" = "student") {
+  console.log("[v0] Starting sign up process", { email, rollNumber, role })
 
   // Validate email is .edu
   if (!validateStudentEmail(email)) {
@@ -75,7 +77,7 @@ export async function signUp(email: string, password: string, rollNumber: string
 
   console.log("[v0] Creating user profile in Firestore")
   // Create user profile in Firestore
-  await createUserProfile(userCredential.user.uid, email, rollNumber.trim())
+  await createUserProfile(userCredential.user.uid, email, rollNumber.trim(), role)
   console.log("[v0] User profile created successfully")
 
   return userCredential.user

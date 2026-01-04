@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useToast } from "@/hooks/use-toast"
 import { spendPoints } from "@/lib/firebase/wallet"
-import { Loader2, ShoppingBag, QrCode, Ticket } from "lucide-react"
+import { Loader2, ShoppingBag, QrCode, Ticket, PartyPopper, Sparkles } from "lucide-react"
 import {
   Dialog,
   DialogContent,
@@ -45,10 +45,39 @@ const PERKS: Perk[] = [
   },
 ]
 
+// Confetti utility
+const triggerConfetti = () => {
+  if (typeof window !== 'undefined' && (window as any).confetti) {
+    const confetti = (window as any).confetti
+    const count = 200
+    const defaults = { origin: { y: 0.7 }, zIndex: 9999 }
+    function fire(particleRatio: number, opts: any) {
+      confetti({ ...defaults, ...opts, particleCount: Math.floor(count * particleRatio) })
+    }
+    fire(0.25, { spread: 26, startVelocity: 55 })
+    fire(0.2, { spread: 60 })
+    fire(0.35, { spread: 100, decay: 0.91, scalar: 0.8 })
+    fire(0.1, { spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 })
+    fire(0.1, { spread: 120, startVelocity: 45 })
+  }
+}
+
 export function PrivilegeStore({ userId, currentPoints }: PrivilegeStoreProps) {
   const [loading, setLoading] = useState<string | null>(null)
   const [activeTicket, setActiveTicket] = useState<Perk | null>(null)
+  const [redeemingPerkId, setRedeemingPerkId] = useState<string | null>(null)
+  const [showSuccess, setShowSuccess] = useState(false)
   const { toast } = useToast()
+
+  // Load confetti script
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !(window as any).confetti) {
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js'
+      script.async = true
+      document.body.appendChild(script)
+    }
+  }, [])
 
   const handleRedeem = async (perk: Perk) => {
     if (currentPoints < perk.cost) {
@@ -61,17 +90,46 @@ export function PrivilegeStore({ userId, currentPoints }: PrivilegeStoreProps) {
     }
 
     setLoading(perk.id)
+    setRedeemingPerkId(perk.id)
+    
     try {
       await spendPoints(userId, perk.cost, `Redeemed: ${perk.name}`)
       
-      if (perk.type === "ticket") {
-        setActiveTicket(perk)
-      } else {
-        toast({
-          title: "Redemption Successful",
-          description: `You have received ${perk.name}.`,
-        })
+      setShowSuccess(true)
+      setTimeout(() => triggerConfetti(), 100)
+
+      // Save to local storage for "My Coupons" feature
+      const ticketId = `TICKET-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
+      const redeemedItem = {
+        id: perk.id,
+        name: perk.name,
+        description: perk.description,
+        redeemedAt: Date.now(),
+        expiresAt: perk.type === 'ticket' ? Date.now() + (15 * 60 * 1000) : Date.now() + (30 * 24 * 60 * 60 * 1000), // 15 mins for tickets, 30 days for others
+        ticketId: ticketId,
+        type: perk.type
       }
+      
+      const stored = localStorage.getItem(`universe_redeemed_coupons_${userId}`)
+      const coupons = stored ? JSON.parse(stored) : []
+      coupons.push(redeemedItem)
+      localStorage.setItem(`universe_redeemed_coupons_${userId}`, JSON.stringify(coupons))
+      
+      // Dispatch event to update UI immediately
+      window.dispatchEvent(new Event('coupon-redeemed'))
+      
+      setTimeout(() => {
+        setShowSuccess(false)
+        if (perk.type === "ticket") {
+          setActiveTicket(perk)
+        } else {
+          toast({
+            title: "🎉 Redemption Successful!",
+            description: `You have received ${perk.name}.`,
+          })
+        }
+        setRedeemingPerkId(null)
+      }, 1500)
     } catch (error) {
       console.error("Error redeeming perk:", error)
       toast({
@@ -79,6 +137,7 @@ export function PrivilegeStore({ userId, currentPoints }: PrivilegeStoreProps) {
         description: "Something went wrong. Please try again.",
         variant: "destructive",
       })
+      setRedeemingPerkId(null)
     } finally {
       setLoading(null)
     }
@@ -86,46 +145,77 @@ export function PrivilegeStore({ userId, currentPoints }: PrivilegeStoreProps) {
 
   return (
     <>
-      <Card className="col-span-1 md:col-span-2">
+      <Card className="col-span-1 md:col-span-2 border-2 border-primary/10">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <ShoppingBag className="h-5 w-5" />
+            <div className="p-2 bg-primary/10 rounded-lg">
+              <ShoppingBag className="h-5 w-5 text-primary" />
+            </div>
             Privilege Store
           </CardTitle>
           <CardDescription>Redeem your attendance points for exclusive perks.</CardDescription>
         </CardHeader>
         <CardContent className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {PERKS.map((perk) => (
-            <Card key={perk.id} className="flex flex-col justify-between">
-              <CardHeader className="pb-2">
-                <div className="flex justify-between items-start">
-                  <CardTitle className="text-base">{perk.name}</CardTitle>
-                  <Badge variant={currentPoints >= perk.cost ? "default" : "secondary"} className="ml-2 shrink-0">
-                    {perk.cost} pts
-                  </Badge>
-                </div>
-                <CardDescription className="text-xs">{perk.description}</CardDescription>
-              </CardHeader>
-              <CardFooter className="pt-2">
-                <Button 
-                  className="w-full" 
-                  size="sm" 
-                  onClick={() => handleRedeem(perk)}
-                  disabled={currentPoints < perk.cost || loading === perk.id}
-                  variant={currentPoints < perk.cost ? "outline" : "default"}
-                >
-                  {loading === perk.id ? (
-                    <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Redeeming...
-                    </>
-                  ) : (
-                    "Redeem"
-                  )}
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
+          {PERKS.map((perk) => {
+            const isRedeeming = redeemingPerkId === perk.id
+            const canAfford = currentPoints >= perk.cost
+            
+            return (
+              <Card 
+                key={perk.id} 
+                className={`flex flex-col justify-between transition-all duration-300 overflow-hidden ${
+                  canAfford ? 'hover:shadow-lg hover:border-primary/30' : 'opacity-75'
+                }`}
+              >
+                <CardHeader className="pb-2">
+                  <div className="flex justify-between items-start">
+                    <CardTitle className="text-base">{perk.name}</CardTitle>
+                    <Badge 
+                      variant={canAfford ? "default" : "secondary"} 
+                      className={`ml-2 shrink-0 ${canAfford ? 'bg-gradient-to-r from-primary to-blue-600' : ''}`}
+                    >
+                      {perk.cost} pts
+                    </Badge>
+                  </div>
+                  <CardDescription className="text-xs">{perk.description}</CardDescription>
+                </CardHeader>
+                <CardFooter className="pt-2">
+                  <Button 
+                    className={`w-full transition-all duration-300 ${
+                      isRedeeming && showSuccess 
+                        ? 'bg-green-500 hover:bg-green-500' 
+                        : canAfford 
+                          ? 'bg-gradient-to-r from-primary to-blue-600 hover:from-primary/90 hover:to-blue-600/90' 
+                          : ''
+                    }`}
+                    size="sm" 
+                    onClick={() => handleRedeem(perk)}
+                    disabled={!canAfford || loading === perk.id}
+                    variant={canAfford ? "default" : "outline"}
+                  >
+                    {loading === perk.id ? (
+                      isRedeeming && showSuccess ? (
+                        <span className="flex items-center gap-2 animate-bounce">
+                          <PartyPopper className="h-4 w-4" />
+                          Ticket Generated!
+                        </span>
+                      ) : (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          Redeeming...
+                        </>
+                      )
+                    ) : (
+                      <span className="flex items-center gap-2">
+                        <Sparkles className="h-4 w-4" />
+                        Redeem
+                      </span>
+                    )}
+                  </Button>
+                </CardFooter>
+              </Card>
+            )
+          })}
         </CardContent>
       </Card>
 

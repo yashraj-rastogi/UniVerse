@@ -8,6 +8,13 @@ import { signUp, validateStudentEmail } from "@/lib/firebase/auth"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useToast } from "@/hooks/use-toast"
 import { Mail, Lock, User, GraduationCap } from "lucide-react"
@@ -17,6 +24,7 @@ export function RegisterForm() {
   const [password, setPassword] = useState("")
   const [confirmPassword, setConfirmPassword] = useState("")
   const [rollNumber, setRollNumber] = useState("")
+  const [role, setRole] = useState<"student" | "teacher">("student")
   const [loading, setLoading] = useState(false)
   const [emailError, setEmailError] = useState("")
   const router = useRouter()
@@ -54,8 +62,8 @@ export function RegisterForm() {
         throw new Error("Password must be at least 6 characters")
       }
 
-      // Sign up user
-      await signUp(email, password, rollNumber)
+      // Sign up user, role
+      await signUp(email, password, rollNumber, role)
 
       toast({
         title: "Registration successful!",
@@ -109,13 +117,26 @@ export function RegisterForm() {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="rollNumber">Roll Number</Label>
+            <Label htmlFor="role">I am a</Label>
+            <Select value={role} onValueChange={(value: "student" | "teacher") => setRole(value)} disabled={loading}>
+              <SelectTrigger>
+                <SelectValue placeholder="Select your role" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="student">Student</SelectItem>
+                <SelectItem value="teacher">Teacher</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="rollNumber">{role === "teacher" ? "Employee ID" : "Roll Number"}</Label>
             <div className="relative">
               <User className="absolute left-3 top-3 h-4 w-4 text-muted-foreground" />
               <Input
                 id="rollNumber"
                 type="text"
-                placeholder="e.g., CS2024001"
+                placeholder={role === "teacher" ? "e.g., EMP2024001" : "e.g., CS2024001"}
                 value={rollNumber}
                 onChange={(e) => setRollNumber(e.target.value)}
                 required

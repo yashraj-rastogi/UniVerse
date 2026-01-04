@@ -1,6 +1,5 @@
-import { collection, addDoc, getDocs, query, orderBy, where, doc, updateDoc, getDoc } from "firebase/firestore"
+import { collection, addDoc, getDocs, query, orderBy, where } from "firebase/firestore"
 import { db } from "./config"
-import { addPoints, spendPoints } from "./wallet"
 
 // Listing interface
 export interface Listing {
@@ -109,7 +108,7 @@ export async function getAvailableListings(): Promise<Listing[]> {
 
 // Get user's listings
 export async function getUserListings(uid: string): Promise<Listing[]> {
-  const q = query(collection(db, "listings"), where("ownerUid", "==", uid), orderBy("createdAt", "desc"))
+  const q = query(collection(db, "listings"), where("ownerUid", "==", uid))
 
   const querySnapshot = await getDocs(q)
   const listings: Listing[] = []
@@ -121,7 +120,24 @@ export async function getUserListings(uid: string): Promise<Listing[]> {
     } as Listing)
   })
 
-  return listings
+  return listings.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+}
+
+// Get items borrowed by user
+export async function getUserBorrowedItems(uid: string): Promise<Listing[]> {
+  const q = query(collection(db, "listings"), where("borrowerUid", "==", uid))
+
+  const querySnapshot = await getDocs(q)
+  const listings: Listing[] = []
+
+  querySnapshot.forEach((doc) => {
+    listings.push({
+      id: doc.id,
+      ...doc.data(),
+    } as Listing)
+  })
+
+  return listings.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
 }
 
 export async function createRequest(
@@ -182,7 +198,7 @@ export async function getActiveRequests(): Promise<Request[]> {
 }
 
 export async function getUserRequests(uid: string): Promise<Request[]> {
-  const q = query(collection(db, "requests"), where("requesterUid", "==", uid), orderBy("createdAt", "desc"))
+  const q = query(collection(db, "requests"), where("requesterUid", "==", uid))
 
   const querySnapshot = await getDocs(q)
   const requests: Request[] = []
@@ -194,5 +210,5 @@ export async function getUserRequests(uid: string): Promise<Request[]> {
     } as Request)
   })
 
-  return requests
+  return requests.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
 }
